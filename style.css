@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    line-height: calc(1em + 0.5rem);
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+    min-height: 44.375rem;
+    max-width: 90rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    margin-left: 70px;
+    height: 37.5rem;
+    width: 75rem;
+    /* border: 1px solid black; */
+    background-image: url(images/hero-desktop.jpg), url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 31.25rem 37.5rem, 43.75rem 37.5rem;
+    background-position: right, left;
+    display: flex;
+    flex-direction: column;
+}
+
+.one {
+    margin-left: 6.25rem;
+    margin-top: 3.125rem;
+    width: 7rem;
+    height: 1.5625rem;
+}
+
+.first h1 {
+    white-space: pre-line;
+    margin-left: 6.25rem;
+    margin-top: 6rem;
+    font-size: 3rem;
+    line-height: 3.125rem;
+}
+
+.first h1 .sp1 {
+    color: hsl(0, 36%, 70%);
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 0.625rem;
+}
+
+.first h1 .sp2 {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.625rem;
+}
+
+.first p {
+    white-space: pre-line;
+    color: hsl(0, 36%, 70%);
+    margin-left: 6.25rem;
+    margin-top: 1rem;
+}
+
+#two {
+    position: relative;
+}
+
+#input {
+    margin-left: 6.25rem;
+    margin-top: 2rem;
+    width: 26.25rem;
+    height: 3.125rem;
+    border-radius: 1.875rem;
+    padding-left: 1.25rem;
+    border: 1px solid hsl(0, 36%, 70%);
+}
+
+::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+#two #btn {
+    position: absolute;
+    top: 2rem;
+    bottom: 0;
+    left: 26.25rem;
+    right: 0;
+    background-color: hsl(0, 93%, 68%);
+    border: none;
+    width: 6.25rem;
+    height: 3.125rem;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#two #btn:hover {
+    opacity: 0.6;
+}
+
+#error {
+    position: absolute;
+    top: 2.8125rem;
+    bottom: 0;
+    left: 23.75rem;
+    right: 0;
+    display: none;
+}
+
+#oneform #msg {
+    color: hsl(0, 36%, 70%);
+    margin-left: 7.5rem;
+    display: none;
+    margin-top: 1.25rem;
+}
+
+@media screen and (max-width:23.4375em) {
+    main {
+        max-width: 23.4375em;
+    }
+
+    .first {
+        margin-left: 0;
+        height: 44.375em;
+        width: 23.4375em;
+        background-image: url(images/hero-mobile.jpg), url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 23.4375em 16em, 23.4375em 44.375em;
+        background-position: center 110px, center;
+    }
+
+    .one {
+        margin-left: 2em;
+        margin-top: 3.125em;
+        width: 7em;
+    }
+
+    .first h1 {
+        margin-left: 0;
+        margin-top: 7em;
+        font-size: 3em;
+        line-height: 1.0416em;
+        text-align: center;
+    }
+
+    .first h1 .sp1 {
+        font-size: 1em;
+    }
+
+    .first h1 .sp2 {
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .first p {
+        width: 21em;
+        white-space: normal;
+        margin-left: 1.5em;
+        text-align: center;
+    }
+
+    #input {
+        text-align: center;
+        margin-left: 1.5em;
+        margin-top: 3em;
+        width: 23em;
+        padding-left: 0;
+        padding-right: 10em;
+        margin-bottom: 10px;
+    }
+
+    #two #btn {
+        top: 3em;
+        left: 21em;
+        width: 5em;
+    }
+
+    #error {
+        position: absolute;
+        top: 3.3em;
+        left: 15.5em;
+    }
+
+    #oneform #msg {
+        margin-left: 2em;
+        margin-top: 0;
+    }
+}
